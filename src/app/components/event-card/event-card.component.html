@@ -1,0 +1,27 @@
+<div class="row w-100">
+  <div class="col-12 col-sm-3 my-3" *ngFor="let eve of events">
+    <div class="card w-100 theme-bg">
+      <!-- <i class="fa fa-trash position-absolute remove-event"></i> -->
+      <div class="pic-sec" [style.background-image]="eve.photo != null && eve.photo != '' ? 'url('+eve.photo+')' : 'url(https://thumbs.dreamstime.com/b/timetable-icon-vector-sign-symbol-isolated-white-backgrou-background-your-web-mobile-app-design-logo-concept-133737829.jpg)'">
+        <!-- <img class="card-img-top"
+          [src]="eve.photo != null && eve.photo != '' ? eve.photo : 'https://previews.123rf.com/images/tatianasun/tatianasun1803/tatianasun180300299/98140628-calendar-and-clock-reminder-icon-vector-isolated-illustration-.jpg'"
+          alt="Card image cap"> -->
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">{{eve.name}} </h4>
+        <div class="d-flex justify-content-between text-">
+          <p class="card-text mb-0"><b>{{eve.address}}</b></p>
+          <p class="card-text mb-0"><b><small class="text-date">{{eve.date}}</small></b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 my-3" [routerLink]="['/events/add']">
+    <div class="card w-100 d-flex justify-content-center align-content-center add-more-card theme-bg add-event">
+      <h1 class="text-center">
+        <i class="fa fa-plus"></i><br/>
+        Add More
+      </h1>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+.theme-bg{
+  background-color: #C4C4C4;
+}
+
+.is-invalid{
+  border: 1px solid rgb(228, 55, 55);
+}
+
+.invalid-feedback{
+  color: rgb(228, 55, 55);
+}
+
+.logo{
+  color: #DD005D !important;
+}
+
+.card-body{
+  background-color: #DD005D ;
+  color: #ffffff;
+}
+
+.add-event{
+  cursor: pointer;
+}
+
+.btn-theme{
+  background-color: #DD005D ;
+  color: #ffffff;
+  min-width: 150px;
+  font-size: 20px;
+}
+.text-date{
+  font-weight: bold;
+  color: #000000;
+}
+
+.pic-sec{
+  min-height: 282px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.remove-event{
+  right: 0;
+  margin: 8px;
+  color: rgb(255, 85, 85);
+}
+
+.add-more-card{
+  min-height: 386px;
+}
